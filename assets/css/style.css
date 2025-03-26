@@ -9,6 +9,11 @@
     src: url('../fonts/impact.ttf');
 }
 
+html, body {
+    font-size: 100%; /* Échelle normale */
+    transform: scale(1); /* Annule tout zoom indésirable */
+}
+
 
 
 body{
