@@ -41,26 +41,61 @@ body{
     margin-top: 2rem;
 }
 
-.heure{
+
+
+
+/* Défilement vers la gauche */
+.semaine {
+    display: flex;
     display: flex;
     flex-direction: row;
     gap: 2rem;
     flex-wrap:nowrap;
     width: 100%;
-    box-shadow: 0px -4px 10px 0px rgb(88, 87, 87),0px 10px 10px rgba(0, 0, 0, 0.1); /* Ombre */
-    padding: 1rem;
-    
+    white-space: nowrap;
+    animation: defileDroite 20s linear infinite; /* Ajustez la durée pour modifier la vitesse */
 }
 
-.semaine{
+@keyframes defileDroite {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+/* Conteneur heure : animation de défilement vers la gauche */
+.heure {
+    display: flex;
+    white-space: nowrap;
+    position: relative;
     display: flex;
     flex-direction: row;
     gap: 2rem;
     flex-wrap:nowrap;
     width: 100%;
-    box-shadow: 0px -4px 10px 0px rgb(88, 87, 87),0px 10px 10px rgba(0, 0, 0, 0.1); /* Ombre */
-    padding: 1rem;
 }
+
+.heure .item {
+    flex: none; /* Empêche les éléments de s'étirer */
+    width: 10%; /* Fixe la largeur des éléments */
+}
+
+/* Animation du défilement */
+@keyframes defileGauche {
+    from {
+        transform: translateX(0); /* Départ */
+    }
+    to {
+        transform: translateX(-200%); /* Double la largeur pour s'assurer que la duplication est fluide */
+    }
+}
+
+.heure {
+    animation: defileGauche 50s linear infinite; /* Ajustez la durée selon vos besoins */
+}
+
+
 
 @media screen and (max-width: 768px){
 
