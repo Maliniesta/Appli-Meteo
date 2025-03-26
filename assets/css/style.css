@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'impact';
+    src: url('../fonts/impact.ttf');
+}
+
+
+
+body{
+    font-family: 'impact',sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container-fullwidth{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.details{
+    display: flex;
+    justify-content: space-around;   
+    height: 27rem;
+    gap: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.heure{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap:nowrap;
+    width: 100%;
+    box-shadow: 0px -4px 10px 0px rgb(88, 87, 87),0px 10px 10px rgba(0, 0, 0, 0.1); /* Ombre */
+    padding: 1rem;
+    
+}
+
+.semaine{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap:nowrap;
+    width: 100%;
+    box-shadow: 0px -4px 10px 0px rgb(88, 87, 87),0px 10px 10px rgba(0, 0, 0, 0.1); /* Ombre */
+    padding: 1rem;
+}
+
+
+
+
