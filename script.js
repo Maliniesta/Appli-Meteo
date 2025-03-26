@@ -140,11 +140,13 @@ for (let i = 0; i < heures.length; i++) {
     const heure = heures[i].split("T")[1]; // Extraire uniquement l'heure
     const temperature = temperaturesHoraires[i];
     const pluie = pluiesHoraires[i];
+    const parapluie=`<img id="umbrella" src="assets/img/umbrella.png" alt="Umbrella">`;
+    const thermometre=`<img id="thermometre" src="assets/img/thermometer.png" alt="Thermometre">`
 
     heureElement.innerHTML += `
         <div class="item">
-        <span class="item-temperature">${temperature}°C</span>
-        <span class="item-pluie">${pluie}mm</span>
+        <span class="item-temperature">${thermometre}${temperature}°C</span>
+        <span class="item-pluie">${parapluie}${pluie}mm</span>
         <span class="item-heure">${heure}</span>`
 }
 
