@@ -1,0 +1,109 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 10%;
+    flex: none;
+    background-color: rgba(255, 255, 255, 0.3); /* Blanc avec 30% d'opacité */
+    box-shadow: 0px 4px 10px 0px white; /* Ombre */
+    padding: 2rem;
+}
+
+.item-heure{
+    color: #343553;
+}
+
+.time{
+    font-size: 32px;
+    flex: 1; /* Permet à l'élément de s'étendre pour occuper tout l'espace */
+    
+}
+
+.daily{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 12.5%;
+    background-color: rgba(255, 255, 255, 0.3); /* Blanc avec 30% d'opacité */
+    box-shadow: 0px 4px 10px 0px white; /* Ombre */
+    padding: 2rem;
+    align-items: center;
+}
+
+.daily img{
+    width: 100px;
+}
+
+.daily-jour{
+    font-size: 22px;
+}
+
+.daily-max{
+    font-size: 32px;
+    color:#343553 ;
+}
+
+.daily-min{
+    font-size: 16px;
+}
+
+
+.arrow{
+    position: absolute;
+    top: 28%;
+    left: 45%;
+}
+
+.vitesse{
+    font-size: 30px;
+    color:#343553 ;
+}
+
+.town{
+    font-size: 50px;
+    color:#343553 ;
+}
+
+@media screen and (max-width: 768px){
+
+    .time{
+        font-size: 24px;
+    }
+    .town{
+        font-size: 24px;
+        color:#343553 ;
+    }
+    #wind-compass{
+        width: 20px;
+    
+    }
+
+    #compass{
+        width: 150px;
+    }
+
+    .vitesse{
+        display: none;
+    }
+    .arrow{
+        position: absolute;
+        top: 36%;
+        left: 47%;
+        
+    }
+    .item{
+        width: 30%;    
+    }
+
+    .daily{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        background-color: rgba(255, 255, 255, 0.3); /* Blanc avec 30% d'opacité */
+        box-shadow: 0px 4px 10px 0px white; /* Ombre */
+        padding: 2rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+   
+}

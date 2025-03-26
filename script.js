@@ -101,6 +101,8 @@ document.querySelector('.now').innerHTML = `
 document.body.style.backgroundImage = `url(${bgImageActuelle})`;
 document.body.style.backgroundSize = "cover"; 
 document.body.style.backgroundPosition = "center"; 
+document.body.style.backgroundRepeat = "no-repeat";
+
 
 
 // Définir une constante pour l'image de la boussole

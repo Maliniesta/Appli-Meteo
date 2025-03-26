@@ -11,11 +11,13 @@
     gap: 2rem;
 }
 
-.time{
-    font-size: 32px;
-    flex: 1; /* Permet à l'élément de s'étendre pour occuper tout l'espace */
-    
+#day-image {
+    width: 250px;  
+    height: auto;
+  
 }
+
+
 
 .now{
     width: 30%;
@@ -42,74 +44,63 @@
     position: relative;
     
 }
-
-.item{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 10%;
-    flex: none;
-    
-    background-color: rgba(255, 255, 255, 0.3); /* Blanc avec 30% d'opacité */
-    box-shadow: 0px 4px 10px 0px white; /* Ombre */
-    padding: 2rem;
-}
-
-.item-heure{
-    color: #343553;
-}
-
-.daily{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 12.5%;
-    background-color: rgba(255, 255, 255, 0.3); /* Blanc avec 30% d'opacité */
-    box-shadow: 0px 4px 10px 0px white; /* Ombre */
-    padding: 2rem;
-    align-items: center;
-}
-
-.daily img{
-    width: 100px;
-}
-
-.daily-jour{
-    font-size: 22px;
-}
-
-.daily-max{
-    font-size: 32px;
-    color:#343553 ;
-}
-
-.daily-min{
-    font-size: 16px;
-}
-
-#day-image {
-    width: 250px;  
-  
-}
-
 .boussole{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.arrow{
-    position: absolute;
-    top: 28%;
-    left: 45%;
+
+@media screen and (max-width: 768px){
+    .general{
+        width: 100%;
+        font-size: 34px;
+        color: #343553;
+        background-color: rgba(255, 255, 255, 0.3); /* Blanc avec 30% d'opacité */
+        box-shadow: 0px 4px 10px 0px white; /* Ombre */
+        border-radius: 10px; /* Optionnel : coins arrondis */
+        display: flex;
+        flex-direction: row;
+         align-items: center;
+    }
+
+    #day-image {
+        max-width: 100px; 
+        height: auto;
+    }
+
+    .now{
+        width: 100%;
+        font-size: 34px;
+        color: #343553;
+        background-color: rgba(255, 255, 255, 0.3); /* Blanc avec 30% d'opacité */
+        box-shadow: 0px 4px 10px 0px white; /* Ombre */
+        border-radius: 10px; /* Optionnel : coins arrondis */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .now img{
+        max-width: 100px;
+    }
+
+    .wind{
+        width: 100%;
+        background-color: rgba(107, 98, 98, 0.3); /* Blanc avec 30% d'opacité */
+    box-shadow: 0px 4px 10px 0px white; /* Ombre */
+    border-radius: 10px; /* Optionnel : coins arrondis */
+        
+        
+    }
+    .boussole{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    
+    
 }
 
-.vitesse{
-    font-size: 30px;
-    color:#343553 ;
-}
 
-.town{
-    font-size: 50px;
-    color:#343553 ;
-}
