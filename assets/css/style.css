@@ -15,7 +15,7 @@ body{
     font-family: 'impact',sans-serif;
     width: 100vw;
     overflow-x: hidden;
-    min-height: 100vh; /* Toujours au moins la hauteur de la fenêtre */
+    min-height: 100%; /* Toujours au moins la hauteur de la fenêtre */
 }
 
 .container-fullwidth {
