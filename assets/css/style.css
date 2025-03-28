@@ -18,7 +18,7 @@ html, body {
 
 body{
     font-family: 'impact',sans-serif;
-    width: 100vw;
+    max-width: 100vw;
     overflow-x: hidden;
     min-height: 100%; /* Toujours au moins la hauteur de la fenêtre */
 }
@@ -110,8 +110,12 @@ body{
         height: 100%; /* Assure que le body s'étire à la hauteur de son contenu */
         padding: 0.2rem; /* Ajoute des marges internes */
         overflow-y: auto; /* Active le défilement vertical si nécessaire */
+       
     }
 
+    .container-fullwidth {
+        overflow: hidden; /* Permet de scroller seulement si nécessaire */
+    }
 
 
 }

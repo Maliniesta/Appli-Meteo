@@ -151,7 +151,6 @@ for (let i = 0; i < heures.length; i++) {
 }
 
 
-
 // Données journalières
 if (donnees.daily) {
     const jours = donnees.daily.time;
